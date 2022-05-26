@@ -27,5 +27,5 @@ converter.inference_input_type = tf.uint8
 converter.inference_output_type = tf.uint8
 tflite_quant_model = converter.convert()
 
-with open('tflite/recognition.tflite', 'wb') as f:
+with open('tflite/recognition_functional.tflite', 'wb') as f:
   f.write(tflite_quant_model)
